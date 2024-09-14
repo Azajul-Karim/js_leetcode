@@ -1,13 +1,13 @@
-const lengthOfLIS = require('./index.js');
+const coinChange = require('./index.js');
 
-test('lengthOfLIS function exists', () => {
-  expect(lengthOfLIS).toBeDefined();
+test('coinChange function exists', () => {
+  expect(coinChange).toBeDefined();
 });
 
-test('lengthOfLIS returns the length of the longest increasing subsequence', () => {
-  expect(lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18])).toEqual(4);
+test('coinChange returns the fewest number of coins that you need to make up that amount', () => {
+  expect(coinChange([1, 2, 5], 11)).toEqual(3);
 });
 
-test('lengthOfLIS returns the length of the longest increasing subsequence', () => {
-  expect(lengthOfLIS([0, 1, 0, 3, 2, 3])).toEqual(4);
+test('coinChange returns the fewest number of coins that you need to make up that amount', () => {
+  expect(coinChange([2], 3)).toEqual(-1);
 });
